@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.btn-linkedin, .btn-github {
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.btn-linkedin {
+    @apply btn text-white bg-[#0A66C2] hover:bg-[#084A99] focus:bg-[#084A99] active:bg-[#06376E] focus:ring focus:ring-blue-300;
+    i {
+        @apply text-white;
+    }
+}
+
+.btn-github {
+    @apply btn text-white bg-[#333] hover:bg-[#24292e] focus:bg-[#24292e] active:bg-[#1b1f23] focus:ring focus:ring-gray-400;
+    i {
+        @apply text-white;
+    }
+}
